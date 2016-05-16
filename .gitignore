@@ -1,0 +1,10 @@
+*.exe
+*.[oa]
+
+Kozer/KozerProcess/bin/
+
+Kozer/KozerProcess/obj/
+
+Kozer/KozerInstaller/bin/
+
+Kozer/KozerInstaller/obj/

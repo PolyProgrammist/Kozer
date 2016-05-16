@@ -1,0 +1,31 @@
+KozerInstaller
+
+Version 2.1.1
+
+Files
+	
+	7-zip.dll, 7z.dll and 7zG.exe are the files to unzip @KozerProcessFolderName.zip
+	@KozerProcessFolderName.zip - archive that will be extracted
+
+@someFolder(){
+	return the last folder of "C:\Program files" that doesn't contain "microsoft", "windows", or "google" in its name
+}
+
+
+This program extracts archive to @someFolder(), launches the file, add to startup(msconfig, HKEY_localmachine\...) and deletes itself
+The developer mode provides some functions as install, reinstall, uninstall, launch, stop, ...
+To enter the developer mode pass "Developer" as an argument
+
+
+
+Keep calm and koze!
+
+
+
+
+
+To report the bug or suggest a feature use pechkin350@gmail.com
+
+Spoiler---
+	Version 2.1.2
+		Choose the folder smartly
