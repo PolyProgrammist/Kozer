@@ -1,6 +1,6 @@
 *.exe
+!Kozer/KozerInstaller/7zG.exe
 *.[oa]
-!/Kozer/KozerInstaller/7zG.exe
 
 
 Kozer/KozerProcess/bin/
