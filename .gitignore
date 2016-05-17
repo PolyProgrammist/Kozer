@@ -1,5 +1,5 @@
 *.exe
-!Kozer/KozerInstaller/7zG.exe
+!*7zG.exe
 *.[oa]
 
 
