@@ -22,7 +22,7 @@ A program that sets goat(koza) as desktop wallpaper
 	-Installers
 		The newest installer
 
-You can find ready installers here https://drive.google.com/folderview?id=0Bw-6kboN3QJ0Y3c0eGxIeXFhLVk&usp=sharing
+You can find ready installers [here](https://drive.google.com/folderview?id=0Bw-6kboN3QJ0Y3c0eGxIeXFhLVk&usp=sharing)
 
 -Instructions to build an installer
 	1) build KozerProcess
